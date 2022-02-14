@@ -1,0 +1,37 @@
+<template>
+  <div>
+    <ul style="list-style: none">
+      <TreeListItem :options="config.options" :data="config.data" />
+    </ul>
+  </div>
+</template>
+
+<script>
+import TreeListItem from "./parts/TreeListItem";
+export default {
+  name: "VueDirTreeView",
+  components: {
+    TreeListItem,
+  },
+  props: {
+    config: {
+      type: Object,
+      required: true,
+    },
+  },
+};
+</script>
+
+<style scoped>
+.item {
+  cursor: pointer;
+}
+.bold {
+  font-weight: bold;
+}
+ul {
+  padding-left: 1em;
+  line-height: 1.5em;
+  list-style-type: dot;
+}
+</style>
