@@ -11,8 +11,8 @@
       <b-icon-folder-fill v-if="!isLeaf && !isOpen" style="color: #f8d775" />
       <b-icon-folder2-open v-if="!isLeaf && isOpen" style="color: #f8d775" />
       <FileIconPicker v-if="isLeaf" :fileName="data[0]['title']" />
-      <span v-if="!isLeaf">{{ data[0]["title"] }}</span>
-      <span v-if="isLeaf">
+      <span class="ml-1" v-if="!isLeaf">{{ data[0]["title"] }}</span>
+      <span class="ml-1" v-if="isLeaf">
         {{ trimText(data[0]["title"]) }}
       </span>
       <!-- <b-icon-download
