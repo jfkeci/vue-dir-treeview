@@ -1,13 +1,25 @@
 # vue-dir-tree-view
 
+
+
+![Demo](./src/assets/demo.png)
+
+
+
 Vue directory structure plugin
+
 Render directories with files
 
+
 Icons used: bootstrap icons
+
+
 
 ```bash
 npm install vue-dir-tree-view
 ```
+
+
 
 ```javascript
 import VueDirTreeView from 'vue-dir-tree-view'

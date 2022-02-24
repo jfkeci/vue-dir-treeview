@@ -1,6 +1,6 @@
 {
   "name": "vue-dir-tree-view",
-  "version": "0.0.7",
+  "version": "0.1.1",
   "description": "",
   "main": "dist/vue-dir-tree-view.ssr.js",
   "browser": "dist/vue-dir-tree-view.esm.js",
