@@ -153,6 +153,20 @@
         d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V9H2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM2 12h12v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2zM.5 10a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5z"
       />
     </svg>
+    <svg
+      v-if="fileIcon == 'audio'"
+      :style="style"
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-file-earmark-music-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 6.64v1.75l-2 .5v3.61c0 .495-.301.883-.662 1.123C7.974 13.866 7.499 14 7 14c-.5 0-.974-.134-1.338-.377-.36-.24-.662-.628-.662-1.123s.301-.883.662-1.123C6.026 11.134 6.501 11 7 11c.356 0 .7.068 1 .196V6.89a1 1 0 0 1 .757-.97l1-.25A1 1 0 0 1 11 6.64z"
+      />
+    </svg>
   </i>
 </template>
 
@@ -219,7 +233,7 @@ export default {
         this.fileIcon = "image";
       } else if (
         // Images
-        this.fileName.endsWith(".mp3") ||
+        this.fileName.endsWith(".mp4") ||
         this.fileName.endsWith(".mov") ||
         this.fileName.endsWith(".wmv") ||
         this.fileName.endsWith(".avi") ||
@@ -230,6 +244,15 @@ export default {
       ) {
         this.style.color = "#154FB5";
         this.fileIcon = "video";
+      } else if (
+        // Images
+        this.fileName.endsWith(".mp3") ||
+        this.fileName.endsWith(".m4a") ||
+        this.fileName.endsWith(".flac") ||
+        this.fileName.endsWith(".aac")
+      ) {
+        this.style.color = "#154FB5";
+        this.fileIcon = "audio";
       } else if (
         // Programming
         this.fileName.endsWith(".vue") ||

@@ -2,7 +2,7 @@
 
 
 
-![Demo](./src/assets/demo.png)
+![Demo](https://github.com/jfkeci/vue-dir-treeview/blob/master/vue-dir-tree-view/src/assets/demo.png?raw=true)
 
 
 
@@ -47,6 +47,8 @@ exampledata: [
                 "isLeaf": false,
                 "children": [
                     {"title": "image.jpg", "isLeaf": true},
+                    {"title": "image.mp3", "isLeaf": true},
+                    {"title": "image.mp4", "isLeaf": true},
                     {"title": "spreadsheet.xlsx", "isLeaf": true},
                     {"title": "file.pdf", "isLeaf": true}
                 ]

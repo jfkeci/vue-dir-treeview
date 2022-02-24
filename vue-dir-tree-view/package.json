@@ -1,7 +1,8 @@
 {
   "name": "vue-dir-tree-view",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
+  "homepage": "https://github.com/jfkeci/vue-dir-treeview",
   "main": "dist/vue-dir-tree-view.ssr.js",
   "browser": "dist/vue-dir-tree-view.esm.js",
   "module": "dist/vue-dir-tree-view.esm.js",
