@@ -1,12 +1,12 @@
 <script>
-import Vue from 'vue';
-import VueDirTreeView from '@/vue-dir-tree-view.vue';
+import Vue from "vue";
+import VueDirTreeView from "@/vue-dir-tree-view.vue";
 
 export default Vue.extend({
-  name: 'ServeDev',
+  name: "ServeDev",
   components: {
-    VueDirTreeView
-  }
+    VueDirTreeView,
+  },
 });
 </script>
 

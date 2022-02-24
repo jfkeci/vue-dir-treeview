@@ -65,8 +65,10 @@
       </svg>
 
       <FileIconPicker v-if="isLeaf" :fileName="data[0]['title']" />
-      <span class="ml-1" v-if="!isLeaf">{{ data[0]["title"] }}</span>
-      <span class="ml-1" v-if="isLeaf">
+      <span style="margin-left: 5px" v-if="!isLeaf">{{
+        data[0]["title"]
+      }}</span>
+      <span style="margin-left: 5px" v-if="isLeaf">
         {{ trimText(data[0]["title"]) }}
       </span>
       <!-- <b-icon-download
