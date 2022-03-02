@@ -123,6 +123,8 @@ export default {
     toggle() {
       if (!this.data[0]["isLeaf"]) {
         this.isOpen = !this.isOpen;
+      }else{
+        this.$emit('item-click', this.data[0])
       }
     },
     trimText(text) {

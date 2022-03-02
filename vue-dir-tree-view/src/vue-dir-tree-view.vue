@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul style="list-style: none">
-      <TreeListItem :options="config.options" :data="config.data" />
+      <TreeListItem :options="config.options" :data="config.data" @item-click="onClick" />
     </ul>
   </div>
 </template>
@@ -19,6 +19,11 @@ export default {
       required: true,
     },
   },
+  methods:{
+    onClick(item){
+      this.$emit('item-click', item)
+    }
+  }
 };
 </script>
 

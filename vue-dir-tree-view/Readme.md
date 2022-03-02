@@ -1,25 +1,22 @@
 # vue-dir-tree-view
 
-
-
 ![Demo](https://github.com/jfkeci/vue-dir-treeview/blob/master/vue-dir-tree-view/src/assets/demo.png?raw=true)
-
-
 
 Vue directory structure plugin
 
 Render directories with files
 
-
 Icons used: bootstrap icons
-
-
 
 ```bash
 npm install vue-dir-tree-view
 ```
 
-
+```html
+<template>
+  <VueDirTreeView :config="config" @item-click="onclick" />
+</template>
+```
 
 ```javascript
 import VueDirTreeView from 'vue-dir-tree-view'
@@ -34,9 +31,13 @@ data(){
             options: null,
             data: <exampledata>
         }
+    },
+},
+methods: {
+    onclick(item){
+        console.log(item)
     }
 }
-
 /*
 exampledata: [
     {
